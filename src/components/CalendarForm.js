@@ -17,6 +17,7 @@ class CalendarForm extends React.Component {
                 <div>
                     <label>
                         Data: <input 
+                            type="date"
                             name="date" 
                             onChange={ this.handleFieldChange } 
                             value={ this.state.date } 
@@ -27,6 +28,7 @@ class CalendarForm extends React.Component {
                 <div>
                     <label>
                         Godzina: <input 
+                            type="time"
                             name="time" 
                             onChange={ this.handleFieldChange } 
                             value={ this.state.time } 
