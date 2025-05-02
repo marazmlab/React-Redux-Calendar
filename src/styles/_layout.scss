@@ -1,0 +1,24 @@
+@use 'mixins';
+
+.container {
+  min-width: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include mixins.respond-to(md) {
+    padding: 0 10px;
+  }
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  @include mixins.respond-to(md) {
+    padding: 0.5rem;
+  }
+}

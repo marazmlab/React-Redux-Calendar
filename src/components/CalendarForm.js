@@ -56,12 +56,13 @@ const CalendarForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="calendar__form" onSubmit={handleSubmit}>
             <ul>{errors.map((err, index) => <li key={index}>{err}</li>)}</ul>
-            <div>
+            <div className="calendar__form-box">
                 <label>
                     Data:{' '}
                     <input
+                        className="calendar__form-input"
                         type="date"
                         name="date"
                         value={formData.date}
@@ -73,6 +74,7 @@ const CalendarForm = () => {
                 <label>
                     Godzina:{' '}
                     <input
+                        className="calendar__form-input"
                         type="time"
                         name="time"
                         value={formData.time}
@@ -84,6 +86,7 @@ const CalendarForm = () => {
                 <label>
                     Imię:{' '}
                     <input
+                        className="calendar__form-input"
                         name="firstName"
                         value={formData.firstName}
                         onChange={handleFieldChange}
@@ -94,6 +97,7 @@ const CalendarForm = () => {
                 <label>
                     Nazwisko:{' '}
                     <input
+                        className="calendar__form-input"
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleFieldChange}
@@ -104,6 +108,7 @@ const CalendarForm = () => {
                 <label>
                     Email:{' '}
                     <input
+                        className="calendar__form-input"
                         name="email"
                         value={formData.email}
                         onChange={handleFieldChange}

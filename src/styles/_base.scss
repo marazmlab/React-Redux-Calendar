@@ -1,0 +1,68 @@
+@use 'sass:map';
+@use 'variables';
+
+* {
+  margin: 0;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: map.get(variables.$theme-light, background);
+  color: map.get(variables.$theme-light, text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] {
+  html, body {
+    background-color: map.get(variables.$theme-dark, background);
+    color: map.get(variables.$theme-dark, text);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: map.get(variables.$theme-light, accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  [data-theme="dark"] & {
+    color: map.get(variables.$theme-dark, accent);
+  }
+}

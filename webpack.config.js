@@ -22,7 +22,15 @@ module.exports = {
                 use: 'babel-loader',
                 // określam jaki [loader]
                 // ma być wykorzystany
-            }
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
         ]
         // obecnie brak dodatkowych ustawień
     },

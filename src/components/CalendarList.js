@@ -24,7 +24,7 @@ const CalendarList = () => {
         ));
     };
 
-    return <ul>{renderMeetingsList()}</ul>;
+    return <ul className="calendar__list">{renderMeetingsList()}</ul>;
 };
 
 export default CalendarList;
