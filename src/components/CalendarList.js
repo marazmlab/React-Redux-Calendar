@@ -1,26 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchMeetings } from '../providers/api';
+import { loadMeetingsAction } from '../actions/calendar';
 
-class CalendarList extends React.Component {   
-    render() {
-        return <ul>{ this.renderMeetingsList() }</ul>
-    }
+const CalendarList = () => {
+    const meetings = useSelector((state) => state.meetings);
+    const dispatch = useDispatch();
 
-    renderMeetingsList() {
-        return this.props.meetings.map(item => 
-            this.renderMeetingsItem(item)
-        );
-    }
+    useEffect(() => {
+        fetchMeetings()
+            .then((data) => dispatch(loadMeetingsAction(data)))
+            .catch((error) => console.error('Failed to fetch meetings:', error));
+    }, [dispatch]);
 
-    renderMeetingsItem(itemData) {
-        return (
-            <li key={itemData.id}>
-                {itemData.date} {itemData.time} => 
-                <a href={`mailto: ${itemData.email}`}>
-                    {itemData.firstName} {itemData.lastName}
+    const renderMeetingsList = () => {
+        return meetings.map((item) => (
+            <li key={item.id}>
+                {item.date} {item.time} = {' '}
+                <a href={`mailto:${item.email}`}>
+                    {item.firstName} {item.lastName}
                 </a>
             </li>
-        )
-    }
-}
+        ));
+    };
 
-export default CalendarList
+    return <ul>{renderMeetingsList()}</ul>;
+};
+
+export default CalendarList;

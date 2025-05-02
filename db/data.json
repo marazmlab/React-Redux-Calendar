@@ -7,6 +7,14 @@
       "email": "jan@kowalski.not",
       "date": "2022-01-01",
       "time": "10:00"
+    },
+    {
+      "firstName": "Marek",
+      "lastName": "Kokieszko",
+      "email": "kokieszko@mail.pl",
+      "date": "2025-05-06",
+      "time": "11:40",
+      "id": 2
     }
   ]
 }
