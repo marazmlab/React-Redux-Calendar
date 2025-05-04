@@ -63,6 +63,7 @@ The project contains several tasks organized in folders `01` to `05`, each demon
 - Theme Toggle: Switch between light and dark themes dynamically.
 - Redux Integration: Centralized state management for meetings using Redux.
 
+
 &nbsp;
 
 ## 🔶 Solutions provided in the project
