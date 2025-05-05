@@ -56,7 +56,7 @@ The application will be available at http://localhost:8080.
 
 ## 🔶 Tasks Overview
 
-The project contains several tasks organized in folders `01` to `05`, each demonstrating different styling methods. Below is an overview of the tasks:
+Below is an overview of the tasks:
 
 - Meeting List: Displays a list of scheduled meetings fetched from the JSON server.
 - Add Meeting: Allows users to schedule new meetings using a form.
