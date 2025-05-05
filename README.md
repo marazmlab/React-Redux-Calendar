@@ -84,6 +84,7 @@ This example showcases:
 - **Form validation**: Ensures all required fields are filled and email is valid.
 - **API integration**: Sends the form data to the JSON server and updates the Redux store.
 
+
 &nbsp;
 
 ## 🔶 Conclusions
