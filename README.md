@@ -22,36 +22,9 @@ This repository is dedicated to practicing and mastering state management in Rea
 
 &nbsp;
 
-## 🔶 Installation
+## 🚀 Live Demo
 
-The project uses [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). To run the project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/marazmlab/task-react-redux-basics.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd task-react-redux-basics
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-4. Start the JSON server for the API:
-   ```bash
-   json-server --watch ./db/data.json --port 3005
-   ```
-
-5. Start the development server:
-   ```bash
-   npm start
-   ```
-
-The application will be available at http://localhost:8080.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://marazmlab.github.io/React-Currency-Exchange-App/)
 
 &nbsp;
 
