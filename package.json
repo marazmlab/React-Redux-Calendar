@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://belzm.github.io/React-Redux-Calendar",
+  "homepage": "https://marazmlab.github.io/React-Redux-Calendar",
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
