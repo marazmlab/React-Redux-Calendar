@@ -1,4 +1,4 @@
-const API_URL = 'https://686fde304838f58d1123307c.mockapi.io/meetings';
+const API_URL = 'https://686fde304838f58d1123307c.mockapi.io/meetings/meetings';
 
 export const fetchMeetings = async () => {
     const response = await fetch(API_URL);
