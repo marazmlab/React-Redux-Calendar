@@ -2,6 +2,7 @@ const path = require('path');
 // importuję bibliotękę [path] z [node.js]
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // importuję odpowiedni plugin
+
 module.exports = {
     entry: './src/index.js',
     // definiuje plik wejściowy
@@ -10,6 +11,8 @@ module.exports = {
         // definiuje ścieżką wyjściową
         filename: 'index.min.js',
         // definiuję nazwę pliku wyjściowego
+        publicPath: process.env.NODE_ENV === 'production' ? '/React-Redux-Calendar/' : '/',
+        // ścieżka dla GitHub Pages
     },
     module: {
         rules: [
