@@ -29,6 +29,7 @@ The project uses [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.c
 1. Clone the repository:
    ```bash
    git clone https://github.com/marazmlab/task-react-redux-basics.git
+   ```
 
 2. Navigate to the project directory:
    ```bash
