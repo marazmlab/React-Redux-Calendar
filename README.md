@@ -27,7 +27,7 @@ This repository is dedicated to practicing and mastering state management in Rea
 
 ## 🚀 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://marazmlab.github.io/React-Currency-Exchange-App/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://marazmlab.github.io/React-Redux-Calendar/)
 
 &nbsp;
 
